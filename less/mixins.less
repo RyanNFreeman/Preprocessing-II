@@ -1,1 +1,23 @@
 // Mixins in here
+
+.header() {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.custom-btn(@width, @height, @bgcolor, @font-color) {
+    width: @width;
+    height: @height;
+    background-color: @bgcolor;
+    color: @font-color;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.margin () {
+    width: 95%;
+    margin: 10px auto;
+}
